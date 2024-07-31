@@ -1,14 +1,19 @@
-import { fetchData } from "@/helpers";
+"use client";
+import { StoryDataContext } from "@/contexts/StoryData.context";
 import "@bryntum/gantt/gantt.stockholm.css";
-import { StoryblokStory } from "@storyblok/react/rsc";
+import { StoryblokComponent, useStoryblok } from "@storyblok/react";
+import { useContext, useEffect } from "react";
 
-export default async function Home() {
-  const { data } = await fetchData();
-  console.log(">>>>>>>>>>>.", data.story.content);
+export default function Home() {
+  const story = useStoryblok("/home", { version: "draft" });
+  const { setStoryData } = useContext(StoryDataContext);
+  useEffect(() => {
+    setStoryData(story);
+  }, [story, setStoryData]);
 
-  return (
-    // <main>
-    <StoryblokStory story={data.story} />
-    // </main>
-  );
+  if (!story || !story.content) {
+    return <div>Loading...</div>;
+  }
+
+  return <StoryblokComponent blok={story.content} />;
 }

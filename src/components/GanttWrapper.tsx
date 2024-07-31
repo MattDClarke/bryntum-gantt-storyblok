@@ -21,7 +21,7 @@ const Gantt = dynamic(() => import("./Gantt"), {
 });
 
 const GanttWrapper = ({ tasks }: { tasks: TaskStoryblok }) => {
-  console.log("wrapper", { tasks });
   return <Gantt {...ganttConfig} tasks={tasks} />;
 };
 export { GanttWrapper };
+

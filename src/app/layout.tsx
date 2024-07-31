@@ -1,3 +1,4 @@
+import StoryDataProvider from "@/contexts/StoryData.context";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,10 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <StoryblokProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </StoryblokProvider>
+    <StoryDataProvider>
+      <StoryblokProvider>
+        <html lang="en">
+          <body className={inter.className}>{children}</body>
+        </html>
+      </StoryblokProvider>
+    </StoryDataProvider>
   );
 }
