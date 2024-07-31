@@ -1,0 +1,205 @@
+{
+  "components": [
+    {
+      "name": "feature",
+      "display_name": null,
+      "created_at": "2024-07-29T11:21:19.068Z",
+      "updated_at": "2024-07-29T11:21:19.068Z",
+      "id": 6104118,
+      "schema": {
+        "name": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "feature",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "gantt",
+      "display_name": null,
+      "created_at": "2024-07-29T20:58:59.524Z",
+      "updated_at": "2024-07-29T21:00:30.149Z",
+      "id": 6106415,
+      "schema": {
+        "tasks": {
+          "type": "bloks",
+          "pos": 0
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "gantt",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "grid",
+      "display_name": null,
+      "created_at": "2024-07-29T11:21:19.049Z",
+      "updated_at": "2024-07-29T11:21:19.049Z",
+      "id": 6104117,
+      "schema": {
+        "columns": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "grid",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2024-07-29T11:21:19.013Z",
+      "updated_at": "2024-07-29T11:21:19.013Z",
+      "id": 6104115,
+      "schema": {
+        "body": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "task",
+      "display_name": null,
+      "created_at": "2024-07-29T20:48:11.274Z",
+      "updated_at": "2024-07-29T20:51:21.562Z",
+      "id": 6106412,
+      "schema": {
+        "id": {
+          "type": "number",
+          "pos": 0
+        },
+        "name": {
+          "type": "text",
+          "pos": 1
+        },
+        "percentDone": {
+          "type": "number",
+          "pos": 2
+        },
+        "startDate": {
+          "type": "datetime",
+          "pos": 3
+        },
+        "endDate": {
+          "type": "datetime",
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "task",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "tasks",
+      "display_name": null,
+      "created_at": "2024-07-29T20:53:55.753Z",
+      "updated_at": "2024-07-29T20:54:33.840Z",
+      "id": 6106413,
+      "schema": {
+        "task": {
+          "type": "bloks",
+          "pos": 0
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "tasks",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "teaser",
+      "display_name": null,
+      "created_at": "2024-07-29T11:21:19.032Z",
+      "updated_at": "2024-07-29T11:21:19.032Z",
+      "id": 6104116,
+      "schema": {
+        "headline": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "teaser",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    }
+  ]
+}

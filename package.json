@@ -6,19 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
+    "pull-sb-components": "storyblok pull-components --space 298751",
+    "generate-sb-types": "storyblok generate-typescript-typedefs --sourceFilePaths ./components.298751.json --destinationFilePath ./component-types-sb.d.ts"
   },
   "dependencies": {
+    "@bryntum/gantt": "^6.0.3",
+    "@bryntum/gantt-react": "^6.0.3",
+    "@storyblok/react": "^3.0.10",
+    "local-ssl-proxy": "^2.0.5",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5"
   }
 }
